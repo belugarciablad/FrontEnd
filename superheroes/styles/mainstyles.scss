@@ -1,0 +1,337 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Karla:wght@400;700&family=Roboto&display=swap");
+
+$secondary-color: #1cd1b0;
+$primay-color: #00669f;
+$hover-color:#001D2D;
+$font-color: #ffffff;
+$background-card: #f3f3f3;
+$card-color: #333333;
+$h2-font-color: #000000;
+$hover-text-color: #f18c07;
+$input-font-family: "Karla", sans-serif;
+$main-font-family: "Roboto", sans-serif;
+$title-font-family: "Inter", sans-serif;
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: $main-font-family;
+}
+li{
+    list-style: none;
+    transition-duration: 300ms;
+}
+li:hover a{
+    color: $hover-text-color;
+}
+a{
+    text-decoration: none;
+}
+body {
+    position: relative;
+}
+.dcto {
+    background: $secondary-color;
+    font-size: 15px;
+    line-height: 18px;
+    height: 18px;
+    padding-left: 20px;
+}
+h1 {
+    font-family: $title-font-family;
+    font-size: 72px;
+    font-weight: bold;
+    line-height: 72px;
+}
+.tienda {
+    width: 99px;
+    height: 74px;
+}
+.tienda-p {
+    display: inline;
+    position: relative;
+    bottom: 25px;
+    font-size: 30px;
+}
+.header,
+.footer {
+    background-color: $primay-color;
+    color: $font-color;
+}
+.header{
+    font-size: 30px;
+    line-height: 35px;
+}
+.footer {
+    margin-top: 144px;
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    height: 61px;
+    font-size: 16px;
+    line-height: 61px;
+    text-align: center; 
+}
+nav{
+    background: #001D2D;
+    height: 40px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    ul{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: flex-end;
+    }
+    li{
+        width: 65px;
+        margin-right: 10px;
+        a{
+            color: $font-color;
+            font-size: 16px;
+            line-height: 40px;
+        }
+    }
+}
+.main{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+    margin-top: 156px;
+    flex-wrap: wrap;
+}
+.superheroe{
+    width: 300px;
+    height: 529px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    background-color: $background-card;
+    color: $card-color;
+    margin: 10px 5px;
+}
+.bg-card{
+    width: 100%;
+    height: 193px;
+    border-radius: 15px 15px 0 0;
+}
+#bg-card-bm{
+    background-image: url('../../images/batman_bg.png');
+}
+#bg-card-hq{
+    background-image: url('../../images/harley_bg.png');
+}
+#bg-card-sm{
+    background-image: url('../../images/superman_bg.png');
+}
+.main-card{
+    position: relative;
+    bottom:64px;
+}
+h2{
+    color: $h2-font-color;
+    text-align: center;
+    margin: 18px 0 10px 0;
+}
+
+.superheroe>div>img{
+    width: 120px;
+    height: 118px;
+    border-radius: 100%;
+    margin:auto;
+    display: block;
+    box-shadow:0px 0px 8px 0px black;
+}
+.description{
+    width: 89%;
+    margin:auto
+}
+.vermas{
+    background-color: $primay-color;
+    color: $background-card;
+    width: 128.78px;
+    height: 48.52px;
+    display: block;
+    margin: auto;
+    margin-top: 37px;
+    transition-duration: 300ms;
+}
+.vermas:hover{
+ font-size: 1rem;
+ font-weight: bold;
+}
+
+.add-super{
+    width: 82px;
+    height: 82px;
+    border-radius: 100%;
+    background: $primay-color;
+    position: fixed;
+    top: 500px;
+    right:50px;
+    transition-duration: 400ms;
+
+    a{
+        color: $font-color;
+        font-size: 62px;
+        text-align: center;
+        display: block;
+        line-height: 82px;
+    }
+}
+.add-super:hover{
+     background: #001D2D;
+}
+
+//form aniadir
+.form-container{
+    width: 954px;
+    height: 832px;
+    background: $primay-color;
+    color: $font-color;
+    display: block;
+    margin: auto;
+    margin-top: 40px;
+    box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.3);
+    border-radius: 49.0901px;
+    label p{
+        text-align: left;
+        margin-bottom: 15px;
+    }
+    label,p{
+        font-size: 20px;
+        font-weight: lighter;
+        display: block;
+    }
+    p{
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    h2{
+        font-size: 40px;
+        color: $font-color;
+        padding: 10px;
+    }
+    h2,p,label{
+        font-family: $input-font-family;
+    }
+}
+.form-columns{
+    display: flex; 
+    flex-grow: 1;  
+    
+    .form-left{
+        margin-left: 123px;
+    }
+    .form-right{
+        margin-right: 123px;
+    }
+    .column{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+    }
+}
+input,
+select {
+  border: 1.5px solid rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  padding-left: 10px;
+  font-family: $input-font-family;
+  width: 343px;
+  height: 63px;
+  border-radius: 15px;
+}
+input::placeholder {
+  color: #000000;
+}
+textarea{
+    width: 343px;
+    height: 307px;
+    border: 1.5px solid rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+}
+input[type=file]{
+    background: #CECECE;
+    width: 236px;
+}
+span{
+    color: black;
+    font-size: 10px;
+}
+input[type=checkbox]{
+    width: 24px;
+    height: 20px;
+}
+input[type=radio]{
+    width: 20px;
+    height: 20px;
+}
+.poderes{
+    border-bottom: 1px solid #ffffff;
+    padding-bottom: 15px;
+    position: relative;
+    bottom: 20px;
+    label{
+        font-size: 16px;
+        height: 38px;
+    }
+}
+.personajes-container{
+    position: relative;
+    bottom: 20px;
+    h3{
+        margin-bottom: 10px;
+    }
+}
+
+#submit{
+    background: $secondary-color;
+    display: block;
+    margin: auto;
+    font-size:40px;
+    font-weight: 700;
+    transition-duration: 500ms;
+}
+#submit:hover{
+    background: $hover-color;
+    color: $font-color;
+}
+
+@media screen and (max-width:960px) {
+    .form-container{
+        height: 100%;
+        width: 90%;
+        padding-bottom: 10px;
+        input,select{
+            width: 90%;
+        }
+        .form-columns{
+            flex-direction: column;
+            .column{
+                margin-left: 20px;
+                width: 100%;
+            }
+            .right-column{
+                margin-right: 0;
+            }
+            textarea{
+                width: 90%;
+            }
+        }
+        input[type=checkbox]{
+            width: 24px;
+            height: 20px;
+        }
+        input[type=radio]{
+            width: 20px;
+            height: 20px;
+        }
+        span{
+            display: none;
+        }
+    }
+    
+}

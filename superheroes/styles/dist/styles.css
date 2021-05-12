@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Karla:wght@400;700&family=Roboto&display=swap");
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  position: relative;
+}
+
+.dcto {
+  background: #1cd1b0;
+  font-size: 15px;
+  line-height: 18px;
+  height: 18px;
+  padding-left: 20px;
+}
+
+h1 {
+  font-family: "Inter", sans-serif;
+  font-size: 72px;
+  font-weight: bold;
+  line-height: 72px;
+}
+
+.tienda {
+  width: 99px;
+  height: 74px;
+}
+
+.tienda-p {
+  display: inline;
+  position: relative;
+  bottom: 25px;
+  font-size: 30px;
+}
+
+.header,
+.footer {
+  background-color: #00669f;
+  color: #ffffff;
+}
+
+.header {
+  font-size: 30px;
+  line-height: 35px;
+}
+
+.form-container {
+  width: 646px;
+  margin-top: 126px;
+  display: block;
+  margin: auto;
+  margin-top: 126px;
+}
+
+.form {
+  margin-top: 50px;
+}
+
+input,
+select {
+  width: 96%;
+  height: 60px;
+  border: 1.5px solid #000000;
+  margin-bottom: 20px;
+  padding-left: 10px;
+  font-family: "Karla", sans-serif;
+}
+
+input::placeholder {
+  color: #000000;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 54px;
+  border-radius: 23px;
+  margin-top: 35px;
+  width: 96%;
+}
+
+#reset,
+#submit {
+  width: 300px;
+  border-radius: 23px;
+  height: 53.79px;
+  font-size: 24px;
+  line-height: 44px;
+  font-weight: bold;
+  padding: 0;
+  border: 0;
+}
+
+#reset {
+  color: #ffffff;
+  background: #888888;
+}
+
+#submit {
+  background: #1cd1b0;
+}
+
+.enlace {
+  width: 96%;
+  display: block;
+  margin-top: 20px;
+  text-align: center;
+  font-family: "Karla", sans-serif;
+}
+.enlace a {
+  color: #00669f;
+}
+
+.footer {
+  margin-top: 144px;
+  text-align: center;
+  position: absolute;
+  width: 100%;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  height: 61px;
+  font-size: 16px;
+  line-height: 61px;
+  text-align: center;
+}
+
+#login {
+  width: 96%;
+  border-radius: 23px;
+  height: 53.79px;
+  font-size: 24px;
+  line-height: 44px;
+  font-weight: bold;
+  padding: 0;
+  border: 0;
+  background: #1cd1b0;
+}
+
+#comments {
+  width: 96%;
+  height: 251px;
+}
